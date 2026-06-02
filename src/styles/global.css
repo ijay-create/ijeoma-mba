@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+:root{
+  --bg:#0B0F19;
+  --primary:#D4AF37;
+  --secondary:#7F5AF0;
+  --white:#F8F8F8;
+  --gray:#A0A0A0;
+  --glass:rgba(255,255,255,0.08);
+}
+
+body{
+  font-family:'Outfit',sans-serif;
+  background:var(--bg);
+  color:var(--white);
+  overflow-x:hidden;
+  scroll-behavior:smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+ul{
+  list-style:none;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+section{
+  padding:100px 0;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+button{
+  border:none;
+  cursor:pointer;
+  font-family:'Outfit',sans-serif;
+}
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:var(--primary);
+  border-radius:10px;
+}
+
+.gradient-text{
+  background:linear-gradient(to right,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.glass{
+  background:var(--glass);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.scroll-top{
+  position:fixed;
+  right:30px;
+  bottom:30px;
+  width:55px;
+  height:55px;
+  border:none;
+  border-radius:50%;
+  background:linear-gradient(
+    to right,
+    var(--primary),
+    var(--secondary)
+  );
+  color:white;
+  font-size:1.2rem;
+  z-index:1000;
+  cursor:pointer;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,154 @@
+.navbar{
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  padding:18px 0;
+  background:rgba(11,15,25,0.55);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.nav-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* LOGO */
+.logo{
+  font-size:2rem;
+  font-weight:700;
+  color:var(--secondary);
+}
+
+.logo span{
+  color:var(--secondary);
+}
+
+/* DESKTOP NAV */
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:35px;
+}
+
+.nav-links li{
+  list-style:none;
+}
+
+.nav-links a{
+  position:relative;
+  font-size:1rem;
+  color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+/* underline animation */
+.nav-links a::after{
+  content:'';
+  position:absolute;
+  width:0%;
+  height:2px;
+  left:0;
+  bottom:-6px;
+  background:var(--primary);
+  transition:0.3s;
+}
+
+.nav-links a:hover::after{
+  width:100%;
+}
+
+/* HIRE BUTTON */
+.hire-btn{
+  padding:10px 22px;
+  background:linear-gradient(to right,var(--primary),var(--secondary));
+  border-radius:30px;
+  color:white;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.hire-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(127,90,240,0.3);
+}
+
+/* MENU ICON */
+.menu-icon{
+  display:none;
+  font-size:1.6rem;
+  cursor:pointer;
+  color:white;
+}
+
+/* PROGRESS BAR */
+.progress-bar{
+  position:fixed;
+  top:0;
+  left:0;
+  height:3px;
+  width:0%;
+  background:linear-gradient(
+    to right,
+    var(--primary),
+    var(--secondary)
+  );
+  z-index:2000;
+  transition:width 0.2s ease-out;
+}
+
+/* ===================== */
+/* MOBILE NAVIGATION     */
+/* ===================== */
+
+.mobile-nav{
+  position:fixed;
+  top:0;
+  right:-100%;
+  width:260px;
+  height:100vh;
+  background:#0B0F19;
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+  padding:80px 25px;
+  transition:0.4s ease;
+  z-index:1500;
+  border-left:1px solid rgba(255,255,255,0.05);
+}
+
+.mobile-nav.active{
+  right:0;
+}
+
+.mobile-nav li{
+  list-style:none;
+}
+
+.mobile-nav a{
+  color:white;
+  font-size:1.1rem;
+  text-decoration:none;
+}
+
+/* ===================== */
+/* RESPONSIVE           */
+/* ===================== */
+
+@media(max-width:900px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .menu-icon{
+    display:block;
+  }
+
+}
