@@ -28,5 +28,3 @@ dist-ssr
 .env.local
 .env.production
 
-src/assets/projects/
-src/assets/images/
