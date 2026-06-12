@@ -7,6 +7,8 @@ import exorseImg from "../assets/projects/exorse.png";
 import luxewigsImg from "../assets/projects/luxewigs.png";
 import BrastraImg from "../assets/projects/brastra.png";
 import fintechImg from "../assets/projects/fintech.png";
+import smilecareImg from "../assets/projects/smilecare.png";
+import crmImg from "../assets/projects/crm.png"
 
 
 
@@ -63,6 +65,24 @@ const Projects = () => {
       category: "Frontend",
       github: "https://github.com/ijay-create/exorse-portfolio.git",
       live: "https://exorse-portfolio.vercel.app/"
+    },
+    {
+      title: "SmileCare Dentals",
+      image: smilecareImg,
+      desc: "SmileCare is a modern, responsive dental clinic web application built with React and Vite, designed to simulate a real-world healthcare booking system with a clean SaaS-style interface.",
+      tech: ["React", "Custom CSS", "Framer Motion", "Vite",],
+      category: "Frontend",
+      github: "https://github.com/ijay-create/smile-care.git",
+      live: "https://smile-care-teal-sigma.vercel.app/"
+    },
+    {
+      title: "CRM Dashboard",
+      image: crmImg,
+      desc: "A modern full-stack Customer Relationship Management (CRM) platform designed to help businesses manage leads, customers, sales pipelines, and internal operations in one centralized system.",
+      tech: ["React", "Custom CSS", "Framer Motion", "Vite","PostreSQL", "Node.js", "Express"],
+      category: "Fullstack",
+      github: "https://github.com/ijay-create/crm-app-server.git",
+      live: "https://crm-app-client-phi.vercel.app/"
     }
   ];
 
