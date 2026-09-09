@@ -9,6 +9,7 @@ import BrastraImg from "../assets/projects/brastra.png";
 import fintechImg from "../assets/projects/fintech.png";
 import smilecareImg from "../assets/projects/smilecare.png";
 import crmImg from "../assets/projects/crm.png"
+import charityImg from "../assets/projects/charity.png"
 
 
 
@@ -83,6 +84,29 @@ const Projects = () => {
       category: "Fullstack",
       github: "https://github.com/ijay-create/crm-app-server.git",
       live: "https://crm-app-client-phi.vercel.app/"
+    },
+    {
+      title: "David Chukwu Charity Foundation",
+      image: charityImg,
+      desc: "A modern full-stack charity foundation platform built to showcase the organization’s mission, causes, impact, outreach programs, and donation opportunities. The platform includes a responsive public website, contact and volunteer engagement forms, admin management features, MongoDB data storage, Cloudinary media management, and transactional email notifications powered by Brevo.",
+      tech: [
+        "React",
+        "Vite",
+        "React Router",
+        "Framer Motion",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Cloudinary",
+        "Brevo API",
+        "JWT",
+        "REST API",
+        "CSS"
+      ],
+      category: "Fullstack",
+      github: "https://github.com/ijay-create/david-chukwu-charity-foundation",
+      live: "https://davidchukwucharityfoundation.org"
     }
   ];
 
